@@ -1,0 +1,36 @@
+============================================================
+CLASSIFICATION RESULTS
+Features : num_qubits, depth, size, multi_qubit_gates, measure_count, rmqg
+Protocol : Stratified 5-Fold Cross-Validation
+============================================================
+
+Logistic Regression
+----------------------------------------
+  auc         : 0.8477 ± 0.0394
+  precision   : 0.8609 ± 0.0762
+  recall      : 0.8111 ± 0.1502
+  f1          : 0.8245 ± 0.0827
+  accuracy    : 0.8302 ± 0.0671
+
+SVM (RBF kernel)
+----------------------------------------
+  auc         : 0.8471 ± 0.0613
+  precision   : 0.7705 ± 0.0445
+  recall      : 0.6944 ± 0.1857
+  f1          : 0.7145 ± 0.0928
+  accuracy    : 0.7324 ± 0.0584
+
+Random Forest
+----------------------------------------
+  auc         : 0.8463 ± 0.0971
+  precision   : 0.8851 ± 0.0999
+  recall      : 0.7611 ± 0.1412
+  f1          : 0.8043 ± 0.0678
+  accuracy    : 0.8169 ± 0.0546
+
+============================================================
+Dataset size note:
+  n=82 is small. SVM with RBF kernel is the most appropriate
+  classifier for this regime — maximises margin under small n,
+  avoids overfitting risk of ensemble methods.
+  Convergence of all three models supports robustness of findings.

@@ -1,0 +1,8 @@
+metric,metric_label,buggy_median,clean_median,buggy_mean,clean_mean,buggy_std,clean_std,mann_whitney_u,p_value,p_bonferroni,significant,cliffs_delta,effect_magnitude,spearman_rho,spearman_p
+num_qubits,Number of Qubits,2.0,2.0,3.5238,3.675,5.7414,5.8412,803.0,0.719494,0.007143,No,-0.044,negligible,-0.0405,0.718234
+depth,Circuit Depth,2.0,4.0,2.881,4.15,2.2168,1.3883,390.0,2e-05,0.007143,Yes,-0.5357,large,-0.4738,7e-06
+size,Total Gate Count,3.0,6.0,4.8095,10.325,6.9084,17.7178,399.5,3.9e-05,0.007143,Yes,-0.5244,large,-0.4572,1.6e-05
+multi_qubit_gates,Multi-Qubit Gate Count,1.0,0.0,1.119,0.95,1.3663,1.244,932.5,0.363854,0.007143,No,0.1101,negligible,0.1014,0.364492
+t_gate_count,T-Gate Count,0.0,0.0,0.0,0.0,0.0,0.0,840.0,nan,0.007143,No,0.0,negligible,nan,nan
+measure_count,Measurement Gate Count,0.0,2.0,2.0476,3.1,5.516,5.7784,584.5,0.014513,0.007143,No,-0.3042,small,-0.2721,0.01339
+rmqg,Ratio of Multi-Qubit Gates (RMQG),0.25,0.0,0.2756,0.1277,0.2644,0.1406,1118.5,0.007085,0.007143,Yes,0.3315,medium,0.2997,0.006223

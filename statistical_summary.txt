@@ -1,0 +1,34 @@
+======================================================================
+STATISTICAL ANALYSIS RESULTS
+Dataset: 42 buggy circuits + 40 clean circuits
+Alpha: 0.05 | Bonferroni-corrected alpha: 0.007143
+======================================================================
+
+Group Comparison Statistics (Buggy vs. Clean):
+----------------------------------------------------------------------
+Metric                          Buggy Med  Clean Med    p-value   Sig?       Effect
+----------------------------------------------------------------------
+Number of Qubits                      2.0        2.0   0.719494     No   negligible
+Circuit Depth                         2.0        4.0      2e-05    Yes        large
+Total Gate Count                      3.0        6.0    3.9e-05    Yes        large
+Multi-Qubit Gate Count                1.0        0.0   0.363854     No   negligible
+T-Gate Count                          0.0        0.0        nan     No   negligible
+Measurement Gate Count                0.0        2.0   0.014513     No        small
+Ratio of Multi-Qubit Gates (RMQG)       0.25        0.0   0.007085    Yes       medium
+----------------------------------------------------------------------
+Metrics with significant differences: 3/7
+
+Association Strength Metrics:
+----------------------------------------------------------------------
+Metric                           Spearman rho    p-value  Cliff delta    Magnitude
+----------------------------------------------------------------------
+Circuit Depth                         -0.4738      7e-06      -0.5357        large
+Total Gate Count                      -0.4572    1.6e-05      -0.5244        large
+Ratio of Multi-Qubit Gates (RMQG)         0.2997   0.006223       0.3315       medium
+Multi-Qubit Gate Count                 0.1014   0.364492       0.1101   negligible
+Number of Qubits                      -0.0405   0.718234       -0.044   negligible
+T-Gate Count                              nan        nan          0.0   negligible
+Measurement Gate Count                -0.2721    0.01339      -0.3042        small
+======================================================================
+
+Full results saved to: C:\Users\Dell\Desktop\QuantumSoftwareEngineering\statistical_results.csv
